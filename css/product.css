@@ -1,0 +1,27 @@
+.table-responsive {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+  }
+
+  /* Additional styling for the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #f2f2f2;
+  }
+  .product-img{
+      height: 100px;
+      width: 100px;
+  }
+  .read-more{
+    cursor: pointer;
+  }

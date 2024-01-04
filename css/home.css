@@ -1,0 +1,142 @@
+
+.container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .left-div {
+      flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 8px;
+   
+  }
+
+  .right-div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 10%;
+    border-radius: 8px;
+  }
+
+  .left-div .sub-div{
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px black;
+    border-radius: 8px;
+
+  }
+  .right-div .sub-div {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 0 8px black;
+    border-radius: 8px;
+  }
+  .image{
+      width: 50%;
+      height: 150px;
+      align-items: center;
+      justify-content: center;
+      
+  }
+  .img-div{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-div{
+      flex: 1;
+      margin-left: 5%;
+    }
+
+    .right-div {
+      flex: 1;
+      margin-right: 5%;
+    }
+    .image{
+      width: 100%;
+      height: 200px;
+    }
+  }
+  .responsive-img {
+    max-width: 100%; /* Maximum width of the image is 100% of its container */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    display: block; /* Remove any default spacing or borders applied to inline elements */
+    margin: 0 auto; /* Center the image horizontally within its container */
+  }
+  .paragraph {
+    overflow: hidden;
+    line-height: 1.2em; /* Set the line height for one line */
+    max-height: 3.6em; /* Set the maximum height for three lines */
+    margin-bottom: 20px;
+  }
+
+  .read-more {
+    cursor: pointer;
+    color: blue;
+    display: inline-block;
+  }
+
+  .expanded {
+    max-height: none; /* Allow the paragraph to expand to its full height */
+  }
+  .submit-btn{
+      background-color: rgb(112, 112, 235);
+      color: white;
+      height: 40px;
+      width: 100px;
+      border: none;
+      border-radius: 8px;
+      margin-top: 10px;
+      
+  }
+  .btn-div{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+  }
+  .list-anim{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .list-anim.to-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .home-anim-left-div{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .home-anim-left-div.to-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .home-anim-right-div{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+
+  .home-anim-right-div.to-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }

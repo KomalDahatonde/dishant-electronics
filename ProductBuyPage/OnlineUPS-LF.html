@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ProductBuyPage.css">
+    <title>Dishant Electronics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img class="logo-icon" src="/images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-items" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/About.html">ABOUT US</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/S&M.html">SALES & MARKETING</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Post.html">POST SALES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Career.html">CAREER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Contact.html">CONTACT US</a>
+            </li>
+            
+        </ul>
+        <ul class="navbar-nav ml-auto nav-contact-text">
+            <li class="navbar-items-contact">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-envelope"></i>
+                    dishantelectronics@gmail.com</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">
+                    <i class="fa fa-phone"></i>
+                    +91 7922202444</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+  <!-- Product Details -->
+  <div class="container mt-5 product-info-div">
+    <div class="row">
+      <div class="col-lg-6 product-image-container">
+        <div class="zoom-square"></div>
+        <img src="/images/contact.jpg" alt="Product Image" class="img-fluid product-image">
+      </div>
+      <div class="col-lg-6">
+        <h2>Online UPS LF</h2>
+        <p class="text-muted">Capacity: 3KVA-20KVA</p>
+        <p><b>Features</b></p>
+        <ul>
+          <li>True on-line dual conversion design</li>
+          <li>Sine wave pulse width modulation</li>
+          <li>IGBT base inverter design</li>
+          <li>Wide input voltage design & window</li>
+          <li>True sine wave output with less than 3% THD</li>
+          <li>Isolation transformer</li>
+          <li>Extendable backup time</li>
+          <li>5amp charger in 10 KVA & 20 KVA, Batteries from 50Ah to 200 Ah</li>
+          <li>Generator compatible and Cold start feature</li>
+          <li>EMI/RFI </li>
+          <li>Filter</li>
+          <li>Advanced battery management</li>
+      </ul>
+      
+        <h3>₹5000</h3>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" class="form-control" id="quantity" value="1" min="1">
+        </div><br>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add JavaScript for the zoom effect
+    $(document).ready(function() {
+      $('.product-image-container').hover(
+        function() {
+          $(this).find('.zoom-square').show();
+        },
+        function() {
+          $(this).find('.zoom-square').hide();
+        }
+      );
+
+      $('.product-image-container').mousemove(function(e) {
+        var imageOffset = $(this).offset();
+        var mouseX = e.pageX - imageOffset.left;
+        var mouseY = e.pageY - imageOffset.top;
+
+        $(this).find('.zoom-square').css({ top: mouseY + 500, left: mouseX + 500 });
+        $(this).find('.product-image').css({ transformOrigin: mouseX + 'px ' + mouseY + 'px' });
+      });
+    });
+  </script>
+
+
+
+  <!-- div hide  -->
+
+  
+  <div class="container mt-5">
+    <div class="btn-group " role="group" aria-label="Button group">
+      <button type="button" class="product-btn btn btn-primary" onclick="showDiv(1)">Spacification</button>
+      </div>
+
+    <div id="div1" class="content-container active mt-3">
+      <div class="alert product-content" role="alert">
+        
+        <table>
+          <tr>
+            <td>Phase</td>
+            <td></td>
+            <td colspan="3">Single Phase Input <br> Single Phase Output</td>
+            <td colspan="2">Three Phase Input <br> Three Phase Output</td>
+        </tr>
+        <tr>
+            <td>Model</td>
+            <td></td>
+            <td>3kva</td>
+            <td>6kva</td>
+            <td>10kva</td>
+            <td>10kva</td>
+            <td>20kva</td>
+        </tr>
+        <tr>
+          <td>Capacity</td>
+          <td></td>
+          <td>2100w</td>
+          <td>4200w</td>
+          <td>7000w</td>
+          <td>7000w</td>
+          <td>14000w</td>
+      </tr>
+            <td rowspan="2">Input</td>
+            <td>Voltage Range</td>
+            <td colspan="2">220v +- 25% (165 to 275v) AC</td>
+            <td colspan="3">380v +-20% (304 to 456v) AC</td>
+        <tr>
+            <td>Frequency</td>
+            <td colspan="5">50 Hz +- 5%</td>
+        </tr>
+        <tr>
+            <td rowspan="6">Output</td>
+            <td>Voltage</td>
+            <td colspan="5">220AC +- 1%</td>
+        </tr>
+        <tr>
+            <td>Frequency</td>
+            <td colspan="5">50Hz +- 0.5%</td>
+        </tr>
+        <tr>
+            <td>Distortion</td>
+            <td colspan="5">THD 3% (Linear Load)</td>
+        </tr>
+        <tr>
+            <td>Waveform</td>
+            <td colspan="5">True Sine Wave</td>
+        </tr>
+        <tr>
+            <td>Power Factor</td>
+            <td colspan="5">0.7</td>
+        </tr>
+        <tr>
+            <td>Overload Capability</td>
+            <td colspan="5">125% for 1 min, 150% for 1 sec <br>
+              110%-150% transfer to bypass after 20sec, short circuit, current limit</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Battery</td>
+            <td>Type</td>
+            <td colspan="5">Sealed led-acid, maintenance free</td>
+        </tr>
+        <tr>
+            <td>Voltage</td>
+            <td>48 VDC</td>
+            <td colspan="4">192 VDC</td>
+        </tr>
+        <tr>
+          <td>Charger Voltage</td>
+          <td>55V</td>
+          <td colspan="4">220V</td>
+      </tr>
+      <tr>
+        <td>Charger Current</td>
+        <td colspan="2">5A</td>
+        <td colspan="3">10A</td>
+      </tr>
+        <tr>
+            <td rowspan="3">System</td>
+            <td>Technology</td>
+            <td colspan="5">SPWM</td>
+        </tr>
+        <tr>
+          <td>Transfer Time</td>
+          <td colspan="5">0 ms</td>
+        </tr>
+        <tr>
+            <td>Efficiency</td>
+            <td colspan="5"> > 85%</td>
+        </tr>
+        <tr>
+            <td rowspan="5">Display</td>
+            <td>LCD</td>
+            <td colspan="5">Operating mode, Input Voltage, Output Voltage, Input Frequency
+              Output Frequency, Battery Voltage, Load Percentage, UPS temperature</td>
+        </tr>
+        <tr>
+          <td>LED</td>
+          <td colspan="5">Low Battery, Online, Inverter, Bypass, Fault</td>
+      </tr>
+        <tr>
+          <td>Communi- <br> cation</td>
+          <td colspan="5">Low Battery, Online, Inverter, Bypass, Fault</td>
+      </tr>
+        <tr>
+          <td>Protection</td>
+          <td colspan="5">Short Circuit, Over Temperature, Battery Low, Output Low, Surge</td>
+      </tr>
+        <tr>
+          <td>Audible Noise</td>
+          <td colspan="5">60db (1 meter)</td>
+      </tr>
+        <tr>
+            <td rowspan="2">Environ- <br>ment</td>
+            <td>Tempera- <br>ture</td>
+            <td colspan="5">0 to 40 Degree Centigrade</td>
+        </tr>
+        <tr>
+          <td>Humidity</td>
+          <td colspan="5">0 to 90%</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Physical</td>
+            <td>Net weight</td>
+            <td>68kg</td>
+            <td>66kg</td>
+            <td>110kg</td>
+            <td>110kg</td>
+            <td>245kg</td>
+        </tr>
+        <tr>
+          <td>Dimen- <br>sions (w*d*h)</td>
+          <td>210*580 <br>*540</td>
+          <td>230*540 <br>*570</td>
+          <td>305*585 <br>*870</td>
+          <td>305*585 <br>*870</td>
+          <td>430*810 <br>*1100</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function showDiv(divNumber) {
+      // Hide all content containers
+      document.querySelectorAll('.content-container').forEach(function (element) {
+        element.classList.remove('active');
+      });
+
+      // Show the selected content container
+      document.getElementById('div' + divNumber).classList.add('active');
+    }
+  </script>
+
+
+
+  <!-- Quick Form  -->
+
+  <div class="container">
+    <form class="enquiry-form">
+      <h2 class="text-center">Quick Enquiry</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div><br>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  
+
+<!-- Footer -->
+<footer>
+    
+    <div class="footer-column">
+      <h3>Industry</h3>
+      <p>&#8702; Air Conditioning Plants</p>
+      <p>&#8702; Medical Equipments</p>
+      <p>&#8702; Offset Printing Machine</p>
+      <p>&#8702; CNC Machine</p>
+      <p>&#8702; Escalators & Elavators</p>
+
+
+    </div>
+    <div class="footer-column">
+      <h3><br></h3>
+      <p>&#8702; Industries & Lighting Load</p>
+      <p>&#8702; Mall & Commercial Complex</p>
+      <p>&#8702; Residences & Offices</p>
+      <p>&#8702; Telecommunication System</p>
+      <p>&#8702; Metrological Department</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Sophisticated Laboratory Equipment</p>
+        <p>&#8702; Defense Equipment</p>
+        <p>&#8702; Information Technology</p>
+        <p>&#8702; Cement Plants</p>
+        <p>&#8702; Hotels</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Textiles Industries</p>
+        <p>&#8702; Pharmaceutical Industries</p>
+        <p>&#8702; Oil Industries</p>
+        <p>&#8702; R & D Institutions</p>
+        <p>&#8702; Induction Heating Plan</p>
+    </div>
+  </footer>
+
+  
+  <div class="footer-logo-div">
+    <img src="/images/AXVOLT-LOGO.jpg" class="footer-logo">
+    <img src="/images/Simon logo.jpg" class="footer-logo-2">
+  </div>
+  <!-- Footer End -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

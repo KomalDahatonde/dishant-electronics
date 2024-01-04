@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ProductBuyPage.css">
+    <title>Dishant Electronics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img class="logo-icon" src="/images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-items" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/About.html">ABOUT US</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/S&M.html">SALES & MARKETING</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Post.html">POST SALES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Career.html">CAREER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Contact.html">CONTACT US</a>
+            </li>
+            
+        </ul>
+        <ul class="navbar-nav ml-auto nav-contact-text">
+            <li class="navbar-items-contact">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-envelope"></i>
+                    dishantelectronics@gmail.com</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">
+                    <i class="fa fa-phone"></i>
+                    +91 7922202444</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+  <!-- Product Details -->
+  <div class="container mt-5 product-info-div">
+    <div class="row">
+      <div class="col-lg-6 product-image-container">
+        <div class="zoom-square"></div>
+        <img src="/images/contact.jpg" alt="Product Image" class="img-fluid product-image">
+      </div>
+      <div class="col-lg-6">
+        <h2>All Power Saver</h2>
+        <p><b>Detail</b>
+        
+Detail
+
+Our All Power Saver can save power for all appliances except for purely resistor appliances. It is effective for all other appliances but is most effective for induction appliances like AC, Refrigerator, Washing Machine, Fan, TV, Tube Lights, Water Pumps, Freezer, Mixer Grinders and all types of single phase motors etc. It is also efficient for other electrical appliances to a certain extent. Overall, the longer they are used, better the effect will be.</p>
+        <h3>₹5000</h3>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" class="form-control" id="quantity" value="1" min="1">
+        </div><br>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 product-info-div">
+    <div>
+      <h5>Information</h5>
+      <p><b>Technology</b><br>
+        All Power Saver uses a state of the art electrical technology to monitor and improve the power factor of your household/office appliances. Additionally, its intelligent technology optimizes the voltage and current demand, thus reducing the active power/KWH demand and achieves 10-30% saving on your electricity bill. It also serve as a voltage stabilizer by storing energy for up to 10 seconds and therefore supplies the load with constant voltage during momentary power surges. This in turn results in longer life span of your electrical appliances.</p>
+      <p><b>Features</b>
+            <ul>
+                <li>Power saving up to 30%</li>
+                <li>Improves Power Factor</li>
+                <li>Prolongs life of appliances</li>
+                <li>Best suited for inductive load</li>
+                <li>Short payback period</li>
+                <li>Fully compliant with safety standards</li>
+            </ul>
+        </p> 
+      </div>
+</div>
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add JavaScript for the zoom effect
+    $(document).ready(function() {
+      $('.product-image-container').hover(
+        function() {
+          $(this).find('.zoom-square').show();
+        },
+        function() {
+          $(this).find('.zoom-square').hide();
+        }
+      );
+
+      $('.product-image-container').mousemove(function(e) {
+        var imageOffset = $(this).offset();
+        var mouseX = e.pageX - imageOffset.left;
+        var mouseY = e.pageY - imageOffset.top;
+
+        $(this).find('.zoom-square').css({ top: mouseY + 500, left: mouseX + 500 });
+        $(this).find('.product-image').css({ transformOrigin: mouseX + 'px ' + mouseY + 'px' });
+      });
+    });
+  </script>
+
+
+
+
+
+
+
+
+  <!-- Quick Form  -->
+
+  <div class="container">
+    <form class="enquiry-form">
+      <h2 class="text-center">Quick Enquiry</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div><br>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  
+
+<!-- Footer -->
+<footer>
+    
+    <div class="footer-column">
+      <h3>Industry</h3>
+      <p>&#8702; Air Conditioning Plants</p>
+      <p>&#8702; Medical Equipments</p>
+      <p>&#8702; Offset Printing Machine</p>
+      <p>&#8702; CNC Machine</p>
+      <p>&#8702; Escalators & Elavators</p>
+
+
+    </div>
+    <div class="footer-column">
+      <h3><br></h3>
+      <p>&#8702; Industries & Lighting Load</p>
+      <p>&#8702; Mall & Commercial Complex</p>
+      <p>&#8702; Residences & Offices</p>
+      <p>&#8702; Telecommunication System</p>
+      <p>&#8702; Metrological Department</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Sophisticated Laboratory Equipment</p>
+        <p>&#8702; Defense Equipment</p>
+        <p>&#8702; Information Technology</p>
+        <p>&#8702; Cement Plants</p>
+        <p>&#8702; Hotels</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Textiles Industries</p>
+        <p>&#8702; Pharmaceutical Industries</p>
+        <p>&#8702; Oil Industries</p>
+        <p>&#8702; R & D Institutions</p>
+        <p>&#8702; Induction Heating Plan</p>
+    </div>
+  </footer>
+  
+  <div class="footer-logo-div">
+    <img src="/images/AXVOLT-LOGO.jpg" class="footer-logo">
+    <img src="/images/Simon logo.jpg" class="footer-logo-2">
+  </div>
+  <!-- Footer End -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

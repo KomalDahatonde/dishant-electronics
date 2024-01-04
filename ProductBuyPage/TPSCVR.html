@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/ProductBuyPage.css">
+    <title>Dishant Electronics</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#"><img class="logo-icon" src="/images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-items" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/index.html">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/About.html">ABOUT US</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/Products.html">PRODUCTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/S&M.html">SALES & MARKETING</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="/Post.html">POST SALES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Career.html">CAREER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/Contact.html">CONTACT US</a>
+            </li>
+            
+        </ul>
+        <ul class="navbar-nav ml-auto nav-contact-text">
+            <li class="navbar-items-contact">
+                <a class="nav-link" href="#">
+                    <i class="fa fa-envelope"></i>
+                    dishantelectronics@gmail.com</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#">
+                    <i class="fa fa-phone"></i>
+                    +91 7922202444</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+
+  <!-- Product Details -->
+  <div class="container mt-5 product-info-div">
+    <div class="row">
+      <div class="col-lg-6 product-image-container">
+        <div class="zoom-square"></div>
+        <img src="/images/threephase1.gif" alt="Product Image" class="img-fluid product-image">
+      </div>
+      <div class="col-lg-6">
+        <h2>Three Phase Servo Controlled Voltage Regulator</h2>
+        <p class="text-muted">Capacity: 3KVA-2000KVA</p>
+        <p>
+          Continuous stable supply of A.C. Power is the life line of any sophisticated electronic system. Performance of any electrical equipment/instrument is optimum at its rated voltage, Under-voltage & Over-voltage produce harmful effect.
+          
+          Under-voltage generally reduces efficiency, whereas Over-Voltage shortens the life. Power SPIKES, accidental OR from the Electricity Boards, can waste very valuable time and corrupt the valuable data fed in. Also a very low voltage can force the system to shut down.</p>
+        <h3>₹5000</h3>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input type="number" class="form-control" id="quantity" value="1" min="1">
+        </div><br>
+        <button class="btn btn-primary">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container mt-5 product-info-div">
+      <div>
+        <h5>Information</h5>
+        <p>
+          Continuous stable supply of A.C. Power is the life line of any sophisticated electronic system. Performance of any electrical equipment/instrument is optimum at its rated voltage, Under-voltage & Over-voltage produce harmful effect.
+          Under-voltage generally reduces efficiency, whereas Over-Voltage shortens the life. Power SPIKES, accidental OR from the Electricity Boards, can waste very valuable time and corrupt the valuable data fed in. Also a very low voltage can force the system to shut down.</p>
+          <p>PACE Automatic voltage regulating Devices / Stabilizers, an excellent remedy for the problems met with, in ensuring optimum performance and in safe-guarding expensive equipments under conditions of wide line voltage fluctuations incorporating latest in integrated circulatory & solid state technology.</p>
+
+          <h5>Three Phase System</h5>
+          <p>We offer two types of three phase systems.</p>
+
+          <ol>
+            <li>Un-Balanced load</li>
+            <li>Balanced load.</li>
+          </ol>
+          <p>In situations where the three phase-to-neutral voltage vary without equality to each other, each phase will have to be corrected independently and this will require three single phase stabilizers connected in star, one for each phase between neutral an phase wire. However in standard BALANCED LOAD versions, only one of the three phase is monitored for error and necessary correction is effective for all three phase voltages However, a switch is provided to select any one of the three phase for monitoring. The voltmeter also has a 6 position rotary switch that shows input and output voltages of any of the three phases.</p>
+      
+        </div>
+  </div>
+
+  <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    // Add JavaScript for the zoom effect
+    $(document).ready(function() {
+      $('.product-image-container').hover(
+        function() {
+          $(this).find('.zoom-square').show();
+        },
+        function() {
+          $(this).find('.zoom-square').hide();
+        }
+      );
+
+      $('.product-image-container').mousemove(function(e) {
+        var imageOffset = $(this).offset();
+        var mouseX = e.pageX - imageOffset.left;
+        var mouseY = e.pageY - imageOffset.top;
+
+        $(this).find('.zoom-square').css({ top: mouseY + 500, left: mouseX + 500 });
+        $(this).find('.product-image').css({ transformOrigin: mouseX + 'px ' + mouseY + 'px' });
+      });
+    });
+  </script>
+
+
+
+
+
+
+  <!-- div hide  -->
+
+  
+  <div class="container mt-5">
+    <div class="btn-group " role="group" aria-label="Button group">
+      <button type="button" class="product-btn btn btn-primary" onclick="showDiv(1)">Model</button>
+      <button type="button" class="product-btn btn btn-primary" onclick="showDiv(2)">Specification</button>
+      <button type="button" class="product-btn btn btn-primary" onclick="showDiv(3)">Features</button>
+      <button type="button" class="product-btn btn btn-primary" onclick="showDiv(4)">Applications</button>
+    </div>
+
+    <div id="div1" class="content-container active mt-3">
+      <div class="alert product-content" role="alert">
+        <table>
+          <tr>
+            <td>Rating</td>
+            <td>3KVA-2000KVA</td>
+        </tr>
+        <tr>
+            <td>Input Voltage Range</td>
+            <td>340V-480V, 300V-480V</td>
+        </tr>
+        <tr>
+            <td>Output Voltage Range</td>
+            <td>415V +- 1%</td>
+        </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="div2" class="content-container mt-3">
+      <div class="alert product-content" role="alert">
+        <table>
+          <tr>
+            <td>Capacity, KVA rating</td>
+            <td>3 KVA to 2000 KVA</td>
+          </tr>
+          <tr>
+            <td>Input Voltage Range</td>
+            <td>340 V to 480 V / 300 V to 480 V (Balanced or Unbalanced to be specified)</td>
+          </tr>
+          <tr>
+            <td>Output Voltage</td>
+            <td>415 V +- 1%, line to line Nominal or as specified by customer</td>
+          </tr>
+          <tr>
+            <td>Rate of Correction</td>
+            <td>Up to 100V per sec</td>
+          </tr>
+          <tr>
+            <td>Response Time</td>
+            <td>10 m sec</td>
+          </tr>
+          <tr>
+            <td>Efficiency</td>
+            <td>92%</td>
+          </tr>
+          <tr>
+            <td>Waveform Distortion</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Line Frequency</td>
+            <td>47 to 60 HZ</td>
+          </tr>
+          <tr>
+            <td>Cooling Protection</td>
+            <td>Air-Cooled up to 75 KVA, Oil-Cooled for higher KVA Range Automatic High/Low voltage cut off, Overload and Short circuit protection</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div id="div3" class="content-container mt-3">
+      <div class="alert product-content" role="alert">
+        <table>
+          <tr>
+            <td>Efficiency</td>
+            <td>Using high-grade laminations and electrolytic grade copper wires, gain efficiency of 98%</td>
+          </tr>
+          <tr>
+            <td>Micro-Controller Control Module</td>
+            <td>Equipped with Advanced Micro-Controller</td>
+          </tr>
+          <tr>
+            <td>Display Module</td>
+            <td>It has Digital/LCD display for true RMS Voltage, Current status indications and parameters, Auto/Manual facility of operation from front panel controls</td>
+          </tr>
+          <tr>
+            <td>Protection</td>
+            <td>
+              <ul>
+                <li>Short circuit</li>
+                <li>Single phase preventer</li>
+                <li>Over current electronic protection</li>
+                <li>Overload protection</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>Confirming to ISO: 9001-2008</td>
+          </tr>
+          <tr>
+            <td>Mobility</td>
+            <td>Ruggedized construction, castor-mounted for easy movement</td>
+          </tr>
+          <tr>
+            <td>Custom</td>
+            <td>Custom-built specification and design available on request</td>
+          </tr>
+        </table>
+        
+      </div>
+    </div>
+
+    <div id="div4" class="content-container mt-3">
+      <div class="alert product-content" role="alert">
+        <table>
+          <tbody>
+            <tr>
+              <td>Air Conditioning Plants</td>
+              <td>Sophisticated Laboratory Equipment</td>
+            </tr>
+            <tr>
+              <td>Medical Equipments</td>
+              <td>Defense Equipment</td>
+            </tr>
+            <tr>
+              <td>Offset Printing Machine</td>
+              <td>Information Technology</td>
+            </tr>
+            <tr>
+              <td>CNC Machine</td>
+              <td>Cement Plants</td>
+            </tr>
+            <tr>
+              <td>Escalators & Elevators</td>
+              <td>Hotels</td>
+            </tr>
+            <tr>
+              <td>Industries & Lighting Load</td>
+              <td>Textiles Industries</td>
+            </tr>
+            <tr>
+              <td>Mall & Commercial Complex</td>
+              <td>Pharmaceutical Industries</td>
+            </tr>
+            <tr>
+              <td>Residences & Offices</td>
+              <td>Oil Industries</td>
+            </tr>
+            <tr>
+              <td>Telecommunication System</td>
+              <td>R & D Institutions</td>
+            </tr>
+            <tr>
+              <td>Metrological Department</td>
+              <td>Induction Heating Plan</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function showDiv(divNumber) {
+      // Hide all content containers
+      document.querySelectorAll('.content-container').forEach(function (element) {
+        element.classList.remove('active');
+      });
+
+      // Show the selected content container
+      document.getElementById('div' + divNumber).classList.add('active');
+    }
+  </script>
+
+
+
+
+  <!-- Quick Form  -->
+
+  <div class="container">
+    <form class="enquiry-form">
+      <h2 class="text-center">Quick Enquiry</h2>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone:</label>
+        <input type="tel" class="form-control" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+      </div><br>
+      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </form>
+  </div>
+
+  
+
+<!-- Footer -->
+<footer>
+    
+    <div class="footer-column">
+      <h3>Industry</h3>
+      <p>&#8702; Air Conditioning Plants</p>
+      <p>&#8702; Medical Equipments</p>
+      <p>&#8702; Offset Printing Machine</p>
+      <p>&#8702; CNC Machine</p>
+      <p>&#8702; Escalators & Elavators</p>
+
+
+    </div>
+    <div class="footer-column">
+      <h3><br></h3>
+      <p>&#8702; Industries & Lighting Load</p>
+      <p>&#8702; Mall & Commercial Complex</p>
+      <p>&#8702; Residences & Offices</p>
+      <p>&#8702; Telecommunication System</p>
+      <p>&#8702; Metrological Department</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Sophisticated Laboratory Equipment</p>
+        <p>&#8702; Defense Equipment</p>
+        <p>&#8702; Information Technology</p>
+        <p>&#8702; Cement Plants</p>
+        <p>&#8702; Hotels</p>
+    </div>
+    <div class="footer-column">
+        <h3><br></h3>
+        <p>&#8702; Textiles Industries</p>
+        <p>&#8702; Pharmaceutical Industries</p>
+        <p>&#8702; Oil Industries</p>
+        <p>&#8702; R & D Institutions</p>
+        <p>&#8702; Induction Heating Plan</p>
+    </div>
+  </footer>
+
+  
+  <div class="footer-logo-div">
+    <img src="/images/AXVOLT-LOGO.jpg" class="footer-logo">
+    <img src="/images/Simon logo.jpg" class="footer-logo-2">
+  </div>
+  <!-- Footer End -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

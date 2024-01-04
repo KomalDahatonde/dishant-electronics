@@ -1,0 +1,34 @@
+.sm-img {
+    text-align: center;
+  }
+
+  .info-item {
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  /* partnership program */
+  .partnershipProgram-a{
+    text-decoration: none;
+    color:#666666;
+}
+@media only screen and (max-width: 600px) {
+  .product-container {
+    flex-direction: column-reverse; /* Display the boxes in reverse order for mobile view */
+  }
+}
+
+/* Additional styling for mobile view */
+@media only screen and (max-width: 600px) {
+  .box {
+    width: 96%; /* Each box takes 100% width in smaller screens */
+    margin: 0 2%;
+    margin-bottom: 20px; /* Add some space between the boxes */
+  }
+}
