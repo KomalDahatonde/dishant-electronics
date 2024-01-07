@@ -105,13 +105,13 @@
 <div class="container mt-5 product-info-div contactus-div">
   <h2>Contact Us</h2>
   <div class="row">
-    <div class="col-lg-6 product-image-container align-items-center">
-      <div class="zoom-square"></div>
+    <!-- <div class="col-lg-6 product-image-container align-items-center">
+      <div class="zoom-square"></div> -->
       <!-- <img src="/images/contact.jpg" alt="Factory Image" class="img-fluid "><br><br><br><br>
       <img src="/images/contact.jpg" alt="Factory Image" class="img-fluid "> -->
 
-    </div>
-    <div class="col-lg-6">
+    <!-- </div> -->
+    <div class="col-lg-12">
       <p>
           <b>Executive Offices</b> <br>
           G-6, Shayona Estate, Nr. Memco Cross Rd <br>
@@ -122,7 +122,7 @@
           Ishwar Patel: +91 9725011496 <br>
           Visit us : www.dishantelectronics.com
       </p>
-      <p>
+      <!-- <p>
           <b>Our Branch Offices:</b>
       </p>
       <p>
@@ -132,7 +132,7 @@
         Pruthvi Cotton Mill Compound, <br>
         Behind Patel Super Market, Station Road, <br>
         Bharuch-392001, Gujarat <br>
-    </p>
+    </p> -->
     <p>
         <b>Ahmedabad</b> <br>
         Om Electronics <br>
@@ -141,7 +141,7 @@
         Relief Road, Ahmedabad, <br>
         Gujarat 380001 <br>
     </p>
-    <p>
+    <!-- <p>
         <b>Surat (Varachcha)</b> <br>
         Shiv Powertech <br>
         Simon House 4, <br>
@@ -160,12 +160,12 @@
     <p>
         <b>Kachchh (Mandvi)</b> <br>
         TechnoElectronics
-    </p>    
+    </p>     -->
     </div>
   </div>
 </div>
 
-  <!-- Quick Form  -->
+ <!-- Quick Form  -->
 
   <div class="container">
     <form class="enquiry-form">
@@ -186,11 +186,11 @@
         <label for="message">Message:</label>
         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
       </div><br>
-      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      <button type="button" onclick="sendEmail()" class="btn btn-primary btn-block">Submit</button>
     </form>
   </div>
 
-  
+  <script src="script/sendMail.js"></script>
 
 <!-- Footer -->
 <footer>

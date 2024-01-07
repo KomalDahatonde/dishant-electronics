@@ -103,7 +103,7 @@
   <!-- AboutUs info -->
 
   <div class="product-container">
-    <div class="box product-list">
+    <div class="box product-pro-list">
       <ul class="list-container">
         <li class="list-item list-title to-animate">Products</li>
         <a href="productLists/stabilizer.html" class="pro-li-a"><li class="list-item pro-li">
@@ -276,7 +276,7 @@
 
 
 
-  <!-- Quick Form  -->
+ <!-- Quick Form  -->
 
   <div class="container">
     <form class="enquiry-form">
@@ -297,10 +297,11 @@
         <label for="message">Message:</label>
         <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
       </div><br>
-      <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      <button type="button" onclick="sendEmail()" class="btn btn-primary btn-block">Submit</button>
     </form>
   </div>
 
+  <script src="script/sendMail.js"></script>
   
 
 <!-- Footer -->
