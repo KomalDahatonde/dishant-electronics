@@ -11,6 +11,9 @@
     
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/ProductBuyPage.css">
+
+    <script src="https://cdn.razorpay.com/static/checkout/1.0/razorpay.js"></script>
+
     <title>Dishant Electronics</title>
 </head>
 <body>
@@ -89,7 +92,9 @@
           <label for="quantity">Quantity:</label>
           <input type="number" class="form-control" id="quantity" value="1" min="1">
         </div><br>
-        <button class="btn btn-primary">Buy Now</button>
+         <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <button class="btn btn-primary" id="rzp-button">Buy Now</button>
+        <script src="/script/rezorpay.js"></script>
       </div>
     </div>
   </div>
