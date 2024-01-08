@@ -1,6 +1,6 @@
         var options = {
            key: 'rzp_test_sJpyjaezMQUgYU',
-           amount: 20000, // amount in paise (100 paise = 1 INR)
+           amount: 500000, // amount in paise (100 paise = 1 INR)
            currency: 'INR',
            name: 'Dishant Electronics',
            description: 'Product Description',
