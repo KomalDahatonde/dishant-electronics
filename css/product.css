@@ -25,3 +25,12 @@
   .read-more{
     cursor: pointer;
   }
+
+  .product-pro-list {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black;
+}

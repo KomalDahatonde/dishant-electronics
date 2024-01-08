@@ -301,6 +301,15 @@ tr td {
   box-shadow: 0 0 8px black;
 }
 
+@media (max-width: 768px){
+  .contactus-div{
+    width: 96%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 0 8px black;
+  }
+}
+
 #emailLink {
   display: inline-block;
   text-decoration: none;
