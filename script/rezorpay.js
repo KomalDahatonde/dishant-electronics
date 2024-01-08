@@ -11,8 +11,8 @@
               alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
            },
            prefill: {
-              name: 'John Doe',
-              email: 'john@example.com',
+            //   name: 'John Doe',
+            //   email: 'john@example.com',
             //   contact: '9876543210'
            },
            notes: {
