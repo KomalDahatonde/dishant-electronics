@@ -9,8 +9,8 @@ function sendEmail() {
 
     // Replace 'your-email@example.com' with the actual email address where you want to receive the form data
 
-    var toEmail = 'dishantelectronics@gmail.com';
-    // var toEmail = 'dhavalpatel9526@gmail.com';
+    // var toEmail = 'dishantelectronics@gmail.com';
+    var toEmail = 'dhavalpatel9526@gmail.com';
 
     // Compose the email body
     var subject = 'Quick Enquiry Form Submission';
