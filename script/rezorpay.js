@@ -2,9 +2,9 @@
            key: 'rzp_test_sJpyjaezMQUgYU',
            amount: 20000, // amount in paise (100 paise = 1 INR)
            currency: 'INR',
-           name: 'Dhaval Patel',
+           name: 'Dishant Electronics',
            description: 'Product Description',
-           image: 'contact.jpg',
+           image: '/images/logo.png',
         //    order_id: '123456', // generate a unique order ID on your server
            handler: function (response) {
               // Handle the success response
