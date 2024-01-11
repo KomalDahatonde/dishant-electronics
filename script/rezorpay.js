@@ -19,7 +19,7 @@
               address: 'Your Address'
            },
            theme: {
-              color: '#F37254'
+              color: '#2E86C1'
            }
         };
      
