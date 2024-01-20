@@ -337,3 +337,18 @@ marquee img{
   object-fit: contain;
   mix-blend-mode: color-burn;
 }
+
+#imageSlider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 33.33%;
+  float: left;
+  height: auto;
+}
