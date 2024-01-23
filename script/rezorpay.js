@@ -1,14 +1,17 @@
-        var options = {
-           key: 'rzp_test_sJpyjaezMQUgYU',
-           amount: 500000, // amount in paise (100 paise = 1 INR)
+function initiateRazorpayPayment(price) {
+   // Assuming you have the Razorpay API integration script loaded in your HTML
+
+   // Create a Razorpay options object
+   const options = {
+       key: 'rzp_test_sJpyjaezMQUgYU',
+       amount: price * 100,// amount in paise (100 paise = 1 INR)
            currency: 'INR',
            name: 'Dishant Electronics',
            description: 'Product Description',
            image: '/images/logo.png',
         //    order_id: '123456', // generate a unique order ID on your server
-           handler: function (response) {
-              // Handle the success response
-              alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+        handler: function (response) {
+         alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
            },
            prefill: {
             //   name: 'John Doe',
@@ -23,8 +26,13 @@
            }
         };
      
-        var rzp = new Razorpay(options);
+      //   var rzp = new Razorpay(options);
      
-        document.getElementById('rzp-button').onclick = function () {
-           rzp.open();
-        };
+      //   document.getElementById('rzp-button').onclick = function () {
+      //      rzp.open();
+      //   };
+
+      const razorpayInstance = new Razorpay(options);
+    razorpayInstance.open();
+
+      }
