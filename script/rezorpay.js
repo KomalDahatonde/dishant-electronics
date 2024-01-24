@@ -15,6 +15,7 @@ function initiateRazorpayPayment(price) {
            image: '/images/logo.png',
            appname: 'Dishant Electronics', // Add your app name here
            appid: '1.0',
+
          //   order_id: razorpay_payment_id, // generate a unique order ID on your server
         handler: function (response) {
          alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
@@ -25,8 +26,10 @@ function initiateRazorpayPayment(price) {
             //   contact: '9876543210'
            },
            notes: {
-              address: 'Your Address'
-           },
+              address: 'J/106 Balaji Residency,Oppsite Janseva kednra'
+           },  
+           
+
            theme: {
               color: '#007bff'
            }
