@@ -1,5 +1,8 @@
 // Dialogue Box 
-
+function closeDialog() {
+    var dialog = document.getElementById('userDialog');
+    dialog.style.display = 'none';
+}
 
     function openUserDialog() {
       document.getElementById('userDialog').style.display = 'block';
