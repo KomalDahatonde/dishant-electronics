@@ -1,3 +1,23 @@
+// Dialogue Box 
+
+
+    function openUserDialog() {
+      document.getElementById('userDialog').style.display = 'block';
+    }
+
+    function submitUserInfo() {
+      var username = document.getElementById('address').value;
+    //   var email = document.getElementById('email').value;
+
+      // You can perform actions with the user information here.
+      // For now, let's just log the information.
+    //   console.log('Username: ' + username);
+    //   console.log('Email: ' + email);
+
+      // Close the dialog box
+      document.getElementById('userDialog').style.display = 'none';
+    }
+//   Dialogue Box End
 document.addEventListener("DOMContentLoaded", function () {
     const dropdown = document.getElementById("productDropdown");
     const selectedValueParagraph = document.getElementById("selectedValue");

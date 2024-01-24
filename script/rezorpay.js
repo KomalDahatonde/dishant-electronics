@@ -2,7 +2,11 @@
 const productName = document.getElementById('pname').innerText;
 
 
+
 function initiateRazorpayPayment(price) {
+
+   const UserAddress = document.getElementById('address').value;
+
    // Assuming you have the Razorpay API integration script loaded in your HTML
   
    // Create a Razorpay options object
@@ -26,7 +30,7 @@ function initiateRazorpayPayment(price) {
             //   contact: '9876543210'
            },
            notes: {
-              address: 'J/106 Balaji Residency,Oppsite Janseva kednra'
+              address: UserAddress
            },  
            
 

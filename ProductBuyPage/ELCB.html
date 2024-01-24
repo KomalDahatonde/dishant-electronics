@@ -113,7 +113,19 @@
       <!-- </div> -->
     </div>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-    <button class="btn btn-primary" id="buyNowButton">Buy Now</button>
+    <button class="btn btn-primary" onclick="openUserDialog()">Buy Now</button>
+        
+
+
+
+        <div id="userDialog">
+          <h2>Address</h2>
+          <label for="username">Please Enter Your Address:</label>
+          <!-- <input  type="text" id="username" required> -->
+          <textarea class="dialogue-input" rows="5" cols="50" placeholder="Type...!" id="address"></textarea><br>
+          <button class="btn btn-primary" id="buyNowButton">Pay Now</button>
+          
+        </div>
     <script src="/script/product.js"></script>
     <script src="/script/rezorpay.js"></script>
   </div>
