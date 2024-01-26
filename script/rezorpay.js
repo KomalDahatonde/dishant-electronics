@@ -1,7 +1,15 @@
 // Get Product name 
 const productName = document.getElementById('pname').innerText;
 
-
+// Order ID
+function generateOrderId() {
+   // You can use a library like UUID to generate a unique ID
+   // Example using a simple timestamp-based approach
+   const timestamp = new Date().getTime();
+   const randomValue = Math.floor(Math.random() * 1000);
+   const orderId = `${timestamp}${randomValue}`;
+   return orderId;
+ }
 
 function initiateRazorpayPayment(price) {
 
@@ -19,8 +27,7 @@ function initiateRazorpayPayment(price) {
            image: '/images/logo.png',
            appname: 'Dishant Electronics', // Add your app name here
            appid: '1.0',
-
-         //   order_id: razorpay_payment_id, // generate a unique order ID on your server
+           order_id: generateOrderId(), // generate a unique order ID on your server
         handler: function (response) {
          alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
            },
