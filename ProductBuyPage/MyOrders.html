@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="/css/animate.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     
     <link rel="stylesheet" href="/css/home.css">
@@ -82,11 +82,11 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script src="/script/rezorpay.js"></script>
+
 <script>
     // Retrieve order details from localStorage
     const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
-
+    var payment_status = 'Success';
     // Display order details on MyOrder.html
     if (orderDetails) {
         const orderDetailsContainer = document.getElementById('orderDetails');
@@ -96,14 +96,15 @@
                     <h5 class="card-title">Order Confirmation</h5>
                     <p class="card-text">Thank you for your order! Your payment was successful.</p>
                     <p class="card-text"><b>Order ID:</b> ${orderDetails.orderId}</p>
-                    <p class="card-text"><b>Product Name:</b> ${orderDetails.userAddress}</p>
+                    <p class="card-text"><b>Product Name:</b> ${orderDetails.productName}</p>
                     <p class="card-text"><b>Total Amount:</b> ${orderDetails.price} INR</p>
-                    <p class="card-text"><b>User Address:</b> ${orderDetails.produuctName}</p>
+                    <p class="card-text"><b>Payment Status:</b> ${payment_status}</p>
                 </div>
             </div>
         `;
     }
 </script>
+<script src="/script/rezorpay.js"></script>
 
 <!-- Footer -->
 <footer>

@@ -50,13 +50,16 @@ function initiateRazorpayPayment(price) {
 
       }
 
-      function redirectToMyOrder(response, userAddress, productName, price) {
+      var payment_status = 100;
+
+      function redirectToMyOrder(response, productName, price, payment_status) {
+         
          // Save order details in localStorage for retrieval on MyOrder.html
          const orderDetails = {
              orderId: response.razorpay_payment_id,
              productName: productName,
              price: price,
-             userAddress: userAddress
+             payment_status: payment_status,
          };
          // existingOrders.push(newOrder);
          // Store order details in localStorage
