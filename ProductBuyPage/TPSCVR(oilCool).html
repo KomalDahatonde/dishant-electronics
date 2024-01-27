@@ -47,9 +47,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/Career.html">CAREER</a>
             </li>
-           <li class="nav-item">
-              <a class="nav-link" href="/ProductBuyPage/MyOrders.html">ORDERS</a>
-          </li>
             <li class="nav-item">
                 <a class="nav-link" href="/Contact.html">CONTACT US</a>
             </li>
@@ -79,13 +76,15 @@
     <div class="row">
       <div class="col-lg-6 product-image-container">
         <div class="zoom-square"></div>
-        <img src="/images/contact.jpg" alt="Product Image" class="img-fluid product-image">
+        <img src="/images/threephase1.gif" alt="Product Image" class="img-fluid product-image">
       </div>
       <div class="col-lg-6">
-        <h2 id="pname">Ultra Isolation Transformer</h2>
-        <!-- <p class="text-muted">Capacity: 1KVA-500KVA</p> -->
+        <h2 id="pname">Three Phase Servo Voltage Regulator (Oil Cool)</h2>
+        <!-- <p class="text-muted">Capacity: 3KVA-2000KVA</p> -->
         <p>
-          There is no doubt about good continuous power availability in our country but the stringent requirements of the sophisticated equipments being used today underlines the necessity of clean power. The present AC power lines are superimposed with dangerous Spikes, Surges, Transients, Sags RFI noise and Harmonics. The high frequency noise can easily interfere with digital and electronic equipments causing data corruption, erratic behaviors and loss of memories. These line noises cause stress on semi conductor components and machine system experiences catastrophic & software failures, extensive damage to PLC's and storage media, leading to heavy loss of production, data and man-hours.</p>
+          Continuous stable supply of A.C. Power is the life line of any sophisticated electronic system. Performance of any electrical equipment/instrument is optimum at its rated voltage, Under-voltage & Over-voltage produce harmful effect.
+          
+          Under-voltage generally reduces efficiency, whereas Over-Voltage shortens the life. Power SPIKES, accidental OR from the Electricity Boards, can waste very valuable time and corrupt the valuable data fed in. Also a very low voltage can force the system to shut down.</p>
           <div class="form-group">
             <label for="productDropdown">Capacity</label>
             <select class="form-select" name="sellist1" id="productDropdown">
@@ -99,39 +98,52 @@
             </select>
              <br>
              <!-- <div id="priceDisplay"> -->
-                 <!-- Price:<br>
-    <h3 id="selectedValue">₹1500 </h3> -->
+                 Price:<br>
+    <h3 id="selectedValue">₹1500 </h3>
           <!-- </div> -->
         </div>
-        <!-- <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-        <button class="btn btn-primary" onclick="openUserDialog()">Buy Now</button> -->
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+        <button class="btn btn-primary" onclick="openUserDialog()">Buy Now</button>
         
 
 
 
-        <!-- <div id="userDialog">
+        <div id="userDialog">
           <button id="closeButton" onclick="closeDialog()">x</button>
           <h2>Address</h2>
-          <label for="username">Please Enter Your Address:</label> 
-          
+          <label for="username">Please Enter Your Address:</label>
+          <!-- <input  type="text" id="username" required> -->
           <textarea class="dialogue-input" rows="5" cols="50" placeholder="Type...!" id="address"></textarea><br>
           <button class="btn btn-primary" id="buyNowButton">Pay Now</button>
           
-        </div> -->
+        </div>
         <script src="/script/product.js"></script>
-        <!-- <script src="/script/rezorpay.js"></script> -->
+        <script src="/script/rezorpay.js"></script>
       </div>
     </div>
   </div>
 
 
   <div class="container mt-5 product-info-div">
-    <div>
-      <h5>Information</h5>
-      <p>Isolation Transformers eliminate such noises and attenuates the spikes to minimal values, providing complete protection against such electrical disturbances. It consists of double wound Transformers with extremely low coupling capacitance to isolate the voltage spikes and reduce noise from mains with extremely high insulation resistance. They are most effective for medical equipment because of its characteristic of providing complete isolation from main lines. It is available on KVA rating from 3 KVA to 500 KVA in three phase and 1 KVA to 50 KVA in single phase.</p>
-    
-      </div>
-</div>
+      <div>
+        <h5>Information</h5>
+        <p>
+          Continuous stable supply of A.C. Power is the life line of any sophisticated electronic system. Performance of any electrical equipment/instrument is optimum at its rated voltage, Under-voltage & Over-voltage produce harmful effect.
+          Under-voltage generally reduces efficiency, whereas Over-Voltage shortens the life. Power SPIKES, accidental OR from the Electricity Boards, can waste very valuable time and corrupt the valuable data fed in. Also a very low voltage can force the system to shut down.</p>
+          <p>PACE Automatic voltage regulating Devices / Stabilizers, an excellent remedy for the problems met with, in ensuring optimum performance and in safe-guarding expensive equipments under conditions of wide line voltage fluctuations incorporating latest in integrated circulatory & solid state technology.</p>
+
+          <h5>Three Phase System</h5>
+          <p>We offer two types of three phase systems.</p>
+
+          <ol>
+            <li>Un-Balanced load</li>
+            <li>Balanced load.</li>
+          </ol>
+          <p>In situations where the three phase-to-neutral voltage vary without equality to each other, each phase will have to be corrected independently and this will require three single phase stabilizers connected in star, one for each phase between neutral an phase wire. However in standard BALANCED LOAD versions, only one of the three phase is monitored for error and necessary correction is effective for all three phase voltages However, a switch is provided to select any one of the three phase for monitoring. The voltmeter also has a 6 position rotary switch that shows input and output voltages of any of the three phases.</p>
+      
+        </div>
+  </div>
+
   <!-- Bootstrap JS and Popper.js (required for Bootstrap components) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -163,6 +175,8 @@
 
 
 
+
+
   <!-- div hide  -->
 
   
@@ -178,17 +192,17 @@
       <div class="alert product-content" role="alert">
         <table>
           <tr>
-            <td>Single Phase</td>
-            <td>1KVA-50KVA</td>
-          </tr>
-          <tr>
-            <td>Three Phase</td>
-            <td>3KVA-500KVA</td>
-          </tr>
-          <tr>
+            <td>Rating</td>
+            <td>3KVA-2000KVA</td>
+        </tr>
+        <tr>
+            <td>Input Voltage Range</td>
+            <td>340V-480V, 300V-480V</td>
+        </tr>
+        <tr>
             <td>Output Voltage Range</td>
-            <td> As per your Specification </td>
-          </tr>
+            <td>415V +- 1%</td>
+        </tr>
         </table>
       </div>
     </div>
@@ -197,85 +211,41 @@
       <div class="alert product-content" role="alert">
         <table>
           <tr>
-            <th>Input</th>
-            <th>Output</th>
-            <th>Rating Available</th>
-        </tr>
-        <tr>
-            <td>3 phase 415V AC</td>
-            <td>3 phase 415V AC</td>
-            <td>From 3 KVA to 500 KVA</td>
-        </tr>
-        <tr>
-            <td>1 phase 230V AC</td>
-            <td>1 phase 230V AC</td>
-            <td>From 1 KVA to 50 KVA</td>
-        </tr>
-        <tr>
-            <td>1 phase 230V AC</td>
-            <td>1 phase 110V AC</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>System Construction</td>
-            <td>Delta / Star</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Transformer Ratio</td>
-            <td>1:1 and 2:1</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Regulation</td>
-            <td>Better than 4%</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Power Factor</td>
-            <td>0.75 log to lead</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Frequency</td>
-            <td>50HZ</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>VI Electric strength</td>
-            <td>2500</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Insulation Resistance</td>
-            <td>More than 1000 M</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Capacitance Coupling</td>
-            <td>0.01 PF 100 b.b</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Common Mode attenuation</td>
-            <td>100 b.b</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Class of Insulation</td>
-            <td>Class "F"</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Operating temperature</td>
-            <td>0C to 45C</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Type of cooling</td>
-            <td>Air</td>
-            <td></td>
-        </tr>
+            <td>Capacity, KVA rating</td>
+            <td>3 KVA to 2000 KVA</td>
+          </tr>
+          <tr>
+            <td>Input Voltage Range</td>
+            <td>340 V to 480 V / 300 V to 480 V (Balanced or Unbalanced to be specified)</td>
+          </tr>
+          <tr>
+            <td>Output Voltage</td>
+            <td>415 V +- 1%, line to line Nominal or as specified by customer</td>
+          </tr>
+          <tr>
+            <td>Rate of Correction</td>
+            <td>Up to 100V per sec</td>
+          </tr>
+          <tr>
+            <td>Response Time</td>
+            <td>10 m sec</td>
+          </tr>
+          <tr>
+            <td>Efficiency</td>
+            <td>92%</td>
+          </tr>
+          <tr>
+            <td>Waveform Distortion</td>
+            <td>Nil</td>
+          </tr>
+          <tr>
+            <td>Line Frequency</td>
+            <td>47 to 60 HZ</td>
+          </tr>
+          <tr>
+            <td>Cooling Protection</td>
+            <td>Air-Cooled up to 75 KVA, Oil-Cooled for higher KVA Range Automatic High/Low voltage cut off, Overload and Short circuit protection</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -284,45 +254,90 @@
       <div class="alert product-content" role="alert">
         <table>
           <tr>
-            <td>Isolates the equipment from noisy powerline</td>
-        </tr>
-        <tr>
-            <td>Reduces powerline Noise, Surges, Spikes & Transients</td>
-        </tr>
-        <tr>
-            <td>High Insulation resistance</td>
-        </tr>
-        <tr>
-            <td>Provides the complete Electromagnetic & Electrostatic shielding</td>
-        </tr>
+            <td>Efficiency</td>
+            <td>Using high-grade laminations and electrolytic grade copper wires, gain efficiency of 98%</td>
+          </tr>
+          <tr>
+            <td>Micro-Controller Control Module</td>
+            <td>Equipped with Advanced Micro-Controller</td>
+          </tr>
+          <tr>
+            <td>Display Module</td>
+            <td>It has Digital/LCD display for true RMS Voltage, Current status indications and parameters, Auto/Manual facility of operation from front panel controls</td>
+          </tr>
+          <tr>
+            <td>Protection</td>
+            <td>
+              <ul>
+                <li>Short circuit</li>
+                <li>Single phase preventer</li>
+                <li>Over current electronic protection</li>
+                <li>Overload protection</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>Confirming to ISO: 9001-2008</td>
+          </tr>
+          <tr>
+            <td>Mobility</td>
+            <td>Ruggedized construction, castor-mounted for easy movement</td>
+          </tr>
+          <tr>
+            <td>Custom</td>
+            <td>Custom-built specification and design available on request</td>
+          </tr>
         </table>
+        
       </div>
     </div>
 
     <div id="div4" class="content-container mt-3">
       <div class="alert product-content" role="alert">
         <table>
-          <tr>
-            <td>For preventing data-corruption and failure in computers using hard disc</td>
-          </tr>
-          <tr>
-            <td>For the protection of telecommunication and data communication equipment</td>
-          </tr>
-          <tr>
-            <td>For the patient's safety while using machines like ECG, EEG or EMG pacemakers or any electrosurgical aid</td>
-          </tr>
-          <tr>
-            <td>For clear recording in audio and video recording equipment</td>
-          </tr>
-          <tr>
-            <td>For error-free data in process control instruments</td>
-          </tr>
-          <tr>
-            <td>For elimination of earthing problem in computer installation</td>
-          </tr>
-          <tr>
-            <td>For protection of CNC/PLC equipment from surges/spikes</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Air Conditioning Plants</td>
+              <td>Sophisticated Laboratory Equipment</td>
+            </tr>
+            <tr>
+              <td>Medical Equipments</td>
+              <td>Defense Equipment</td>
+            </tr>
+            <tr>
+              <td>Offset Printing Machine</td>
+              <td>Information Technology</td>
+            </tr>
+            <tr>
+              <td>CNC Machine</td>
+              <td>Cement Plants</td>
+            </tr>
+            <tr>
+              <td>Escalators & Elevators</td>
+              <td>Hotels</td>
+            </tr>
+            <tr>
+              <td>Industries & Lighting Load</td>
+              <td>Textiles Industries</td>
+            </tr>
+            <tr>
+              <td>Mall & Commercial Complex</td>
+              <td>Pharmaceutical Industries</td>
+            </tr>
+            <tr>
+              <td>Residences & Offices</td>
+              <td>Oil Industries</td>
+            </tr>
+            <tr>
+              <td>Telecommunication System</td>
+              <td>R & D Institutions</td>
+            </tr>
+            <tr>
+              <td>Metrological Department</td>
+              <td>Induction Heating Plan</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </div>
