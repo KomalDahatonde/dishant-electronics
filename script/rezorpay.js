@@ -1,7 +1,6 @@
+
 // Get Product name 
 const productName = document.getElementById('pname').innerText;
-
-
 
 function initiateRazorpayPayment(price) {
 
@@ -21,6 +20,7 @@ function initiateRazorpayPayment(price) {
            appid: '1.0',
          //   order_id: '' , // generate a unique order ID on your server
         handler: function (response) {
+         redirectToMyOrder(response, productName, price);
          alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
            },
            prefill: {
@@ -49,3 +49,19 @@ function initiateRazorpayPayment(price) {
     razorpayInstance.open();
 
       }
+
+      function redirectToMyOrder(response, userAddress, productName, price) {
+         // Save order details in localStorage for retrieval on MyOrder.html
+         const orderDetails = {
+             orderId: response.razorpay_payment_id,
+             productName: productName,
+             price: price,
+             userAddress: userAddress
+         };
+         // existingOrders.push(newOrder);
+         // Store order details in localStorage
+         localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
+     
+         // Redirect to MyOrder.html
+         window.location.href = 'MyOrders.html';
+     }
