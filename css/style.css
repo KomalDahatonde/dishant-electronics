@@ -405,10 +405,12 @@ marquee img{
   border: 1px solid #ddd;
   padding: 15px;
   margin-bottom: 20px;
+  box-shadow: 0 0 50px rgb(83, 91, 255);
 }
 
 .product img {
   max-width: 100%;
   height: auto;
 }
+
 
