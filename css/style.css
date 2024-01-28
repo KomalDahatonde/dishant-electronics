@@ -391,8 +391,6 @@ marquee img{
   padding: 10px;
   cursor: pointer;
 }
-
-
 #closeButton {
   position: absolute;
   top: 10px;
@@ -400,3 +398,17 @@ marquee img{
   border: none;
   cursor: pointer;
 }
+
+/* Products Buy */
+.product {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+}
+
