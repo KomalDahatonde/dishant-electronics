@@ -67,4 +67,4 @@ function initiateRazorpayPayment(price) {
      
          // Redirect to MyOrder.html
          window.location.href = 'MyOrders.html';
-     }
+}
