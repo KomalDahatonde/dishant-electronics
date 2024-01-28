@@ -11,7 +11,7 @@ function initiateRazorpayPayment(price) {
    // Create a Razorpay options object
    const options = {
        key: 'rzp_test_sJpyjaezMQUgYU',
-       amount: price * 1000*2,// amount in paise (100 paise = 1 INR)
+       amount: price * 100,// amount in paise (100 paise = 1 INR)
            currency: 'INR',
            name: 'Dishant Electronics',
            description: productName,
