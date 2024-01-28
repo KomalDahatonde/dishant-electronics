@@ -405,7 +405,7 @@ marquee img{
   border: 1px solid #ddd;
   padding: 15px;
   margin-bottom: 20px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 .product:hover{
   background-color: white;
@@ -414,7 +414,6 @@ marquee img{
   margin-bottom: 20px;
   box-shadow: 0 0 50px rgb(0, 0, 0);
   transition: 1s ease-in-out;
-
 }
 
 .product img {
