@@ -69,7 +69,6 @@
 
 
 <div class="container mt-5 mb-5">
-    <h2>Your Order Details</h2>
 
     <!-- Display order details here -->
     <div id="orderDetails">
@@ -84,44 +83,6 @@
 
 
 <script>
-    // Retrieve existing order details from localStorage
-    const existingOrders = JSON.parse(localStorage.getItem('orders')) || [];
-
-    // Retrieve current order details from localStorage
-    const currentOrder = JSON.parse(localStorage.getItem('currentOrder'));
-
-    // Display order details on MyOrder.html
-    if (currentOrder) {
-        // Append the current order to existing orders
-        existingOrders.push(currentOrder);
-        localStorage.setItem('orders', JSON.stringify(existingOrders));
-
-        const orderDetailsContainer = document.getElementById('orderDetails');
-        
-        // Clear the existing content
-        orderDetailsContainer.innerHTML = '';
-
-        // Display all orders
-        existingOrders.forEach((orderDetails, index) => {
-            const newOrderDiv = document.createElement('div');
-            newOrderDiv.className = 'card';
-            newOrderDiv.innerHTML = `
-                <div class="card-body">
-                    <h5 class="card-title">Order Confirmation - ${index + 1}</h5>
-                    <p class="card-text">Thank you for your order! Your payment was successful.</p>
-                    <p class="card-text"><b>Order ID:</b> ${orderDetails.orderId}</p>
-                    <p class="card-text"><b>Product Name:</b> ${orderDetails.productName}</p>
-                    <p class="card-text"><b>Total Amount:</b> ${orderDetails.price} INR</p>
-                    <p class="card-text"><b>Payment Status:</b> ${orderDetails.paymentStatus || 'Pending'}</p>
-                </div>
-            `;
-            orderDetailsContainer.appendChild(newOrderDiv);
-        });
-    }
-</script>
-
-
-<!-- <script>
     // Retrieve order details from localStorage
     const orderDetails = JSON.parse(localStorage.getItem('orderDetails'));
     var payment_status = 'Success';
@@ -141,7 +102,7 @@
             </div>
         `;
     }
-</script> -->
+</script>
 <script src="/script/rezorpay.js"></script>
 
 <!-- Footer -->
