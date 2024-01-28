@@ -70,5 +70,5 @@ function redirectToMyOrder(response, productName, price, payment_status) {
    localStorage.setItem('orderDetails', JSON.stringify(orders));
 
    // Redirect to MyOrder.html
-   window.location.href = 'MyOrders.html';
+   window.location.href = '/ProductBuyPage/MyOrders.html';
 }
