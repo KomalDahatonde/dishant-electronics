@@ -39,12 +39,7 @@ function initiateRazorpayPayment(price) {
           
         };
      
-      //   var rzp = new Razorpay(options);
-     
-      //   document.getElementById('rzp-button').onclick = function () {
-      //      rzp.open();
-      //   };
-
+   
       const razorpayInstance = new Razorpay(options);
     razorpayInstance.open();
 
