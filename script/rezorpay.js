@@ -52,19 +52,28 @@ function initiateRazorpayPayment(price) {
 
       var payment_status = 100;
 
-      function redirectToMyOrder(response, productName, price, payment_status) {
-         
-         // Save order details in localStorage for retrieval on MyOrder.html
-         const orderDetails = {
-             orderId: response.razorpay_payment_id,
-             productName: productName,
-             price: price,
-             payment_status: payment_status,
-         };
-         // existingOrders.push(newOrder);
-         // Store order details in localStorage
-         localStorage.setItem('orderDetails', JSON.stringify(orderDetails));
-     
-         // Redirect to MyOrder.html
-         window.location.href = 'MyOrders.html';
+
+function redirectToMyOrder(response, productName, price, payment_status) {
+   // Retrieve existing orders from localStorage
+   const storedOrders = JSON.parse(localStorage.getItem('orderDetails')) || [];
+
+   // Make sure 'orders' is always an array
+   const orders = Array.isArray(storedOrders) ? storedOrders : [];
+
+   // Save order details in localStorage for retrieval on MyOrder.html
+   const orderDetails = {
+       orderId: response.razorpay_payment_id,
+       productName: productName,
+       price: price,
+       payment_status: payment_status,
+   };
+
+   // Add the new orderDetails to the orders array
+   orders.push(orderDetails);
+
+   // Store updated orders array back in localStorage
+   localStorage.setItem('orderDetails', JSON.stringify(orders));
+
+   // Redirect to MyOrder.html
+   window.location.href = 'MyOrders.html';
 }

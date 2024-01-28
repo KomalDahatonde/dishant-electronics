@@ -12,6 +12,7 @@ function sendEmail() {
     // var toEmail = 'dishantelectronics@gmail.com';
     var toEmail = 'dhavalpatel9526@gmail.com';
 
+
     // Compose the email body
     var subject = 'Quick Enquiry Form Submission';
     var body = 'Name: ' + name + '\nEmail: ' + email + '\nNumber: ' + phone + '\nMessage: ' + message;
