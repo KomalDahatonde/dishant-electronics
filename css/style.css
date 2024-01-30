@@ -255,6 +255,14 @@ tr td {
     height: 300px;
   }
 
+  .whyus-img:hover{
+    transition: 1s ease-in;
+    box-shadow: 0 0 50px rgb(148, 246, 255);
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+  }
 }
 .contact-info-div{
   width: 100%;
