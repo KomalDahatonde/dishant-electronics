@@ -234,6 +234,17 @@ tr td {
   }
 }
 .whyus-img{
+  box-shadow: 0 0 12px black;
+  border: 2px solid black;
+  border-radius: 12px;
+  height: 450px;
+  width: 100%;
+}
+.whyus-img:hover{
+  transition: 1s ease-in;
+  box-shadow: 0 0 50px rgb(148, 246, 255);
+  border: 2px solid black;
+  border-radius: 12px;
   height: 450px;
   width: 100%;
 }
