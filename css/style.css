@@ -7,9 +7,12 @@ body {
     background-position: center center;
 }
 nav {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(144, 144, 144, 0.5);
+    color: black;
 }
-
+.nav-ul{
+  color: black;
+}
 .nav-contact-text li a{
     color: black;
 }
@@ -234,6 +237,17 @@ tr td {
   }
 }
 .whyus-img{
+  box-shadow: 0 0 12px black;
+  border: 2px solid black;
+  border-radius: 12px;
+  height: 450px;
+  width: 100%;
+}
+.whyus-img:hover{
+  transition: 1s ease-in;
+  box-shadow: 0 0 50px rgb(148, 246, 255);
+  border: 2px solid black;
+  border-radius: 12px;
   height: 450px;
   width: 100%;
 }
@@ -244,6 +258,14 @@ tr td {
     height: 300px;
   }
 
+  .whyus-img:hover{
+    transition: 1s ease-in;
+    box-shadow: 0 0 50px rgb(148, 246, 255);
+    border: 2px solid black;
+    border-radius: 12px;
+    height: 300px;
+    width: 100%;
+  }
 }
 .contact-info-div{
   width: 100%;
