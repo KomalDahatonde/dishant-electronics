@@ -59,6 +59,21 @@ footer {
   }
 
   /* Slider CSS */
+  .slider{
+    width: 100%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    /* background-color: #333; */
+  }
+  
+  @media (max-width: 768px) {
+    .slider{
+      width: 100%;
+      padding-left:10px;
+      padding-right:10px;
+      /* background-color: #333; */
+    }
+  }
   .card {
     max-height: 300px; /* Set the maximum height of the card */
     overflow: hidden;
