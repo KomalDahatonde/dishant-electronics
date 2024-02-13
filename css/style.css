@@ -442,5 +442,15 @@ marquee img{
   max-width: 100%;
   height: auto;
 }
+.marquee-tag{
+  margin-left: 210px;
+  margin-right: 210px;
+}
+@media (max-width:768px){
+  .marquee-tag{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+}
 
