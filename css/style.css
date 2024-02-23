@@ -19,6 +19,10 @@ nav {
 .logo-icon{
   width: 100px;
 }
+.drop-down{
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ddd;
+}
 
 /* Footer CSS */
 footer {
@@ -59,6 +63,21 @@ footer {
   }
 
   /* Slider CSS */
+  .slider{
+    width: 100%;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+    /* background-color: #333; */
+  }
+  
+  @media (max-width: 768px) {
+    .slider{
+      width: 100%;
+      padding-left:10px;
+      padding-right:10px;
+      /* background-color: #333; */
+    }
+  }
   .card {
     max-height: 300px; /* Set the maximum height of the card */
     overflow: hidden;
@@ -107,7 +126,7 @@ footer {
   box-sizing: border-box;
   padding: 20px;
   width: 50%;
-  background-color: #f1f1f1;
+  background-color: #ffffff;
   border: 1px solid #ddd;
 
 }
