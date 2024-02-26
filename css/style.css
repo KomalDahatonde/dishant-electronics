@@ -472,4 +472,34 @@ marquee img{
   }
 
 }
+.map-contact{
+  display: flex;
+  padding: 20px;
+}
+.map{
+  position: relative;
+  top:0;
+  left: 200;
+  margin-left: 100px;
+}
+@media (max-width:768px){
+  .map-contact{
+    display: flex;
+    flex-direction: column;
+  }
 
+}
+@media (max-width:768px){
+  .map{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    height: 300px;
+    width: 300px;
+  }
+
+}
+.contact-add{
+  margin-left: 20px;
+}
